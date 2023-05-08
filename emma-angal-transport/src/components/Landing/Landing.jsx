@@ -4,7 +4,12 @@ import {
   LandingHeading,
   LandingMainTextContainer,
   LandingText,
-  LandingImage
+  LandingImage,
+  AboutContainer,
+  Heading,
+  AboutText,
+  TextContainer,
+  AboutImage,
 } from "./style/Landing.style";
 
 const Landing = () => {
@@ -20,7 +25,21 @@ const Landing = () => {
             Solutions You Can Count On
           </LandingText>
         </LandingMainTextContainer>
-        <LandingImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683532492/EmmaAngal/containers_km4jyt.png"/>
+        <LandingImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683532492/EmmaAngal/containers_km4jyt.png" />
+        <AboutContainer>
+          <TextContainer>
+            <Heading>From Point A to Point B</Heading>
+            <AboutText>
+              We are guided by our core values of customer service, reliability,
+              and sustainability. We strive to set ourselves apart from the
+              competition by living these values every day. Our commitment to
+              delivering the best possible outcomes for our clients is
+              unwavering, whether we're handling a single package or managing
+              complex supply chains.
+            </AboutText>
+          </TextContainer>
+          <AboutImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683569578/EmmaAngal/clipart1357525_suwzxp.png"/>
+        </AboutContainer>
       </LandingContainer>
     </Container>
   );

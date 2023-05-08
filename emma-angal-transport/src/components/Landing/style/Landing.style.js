@@ -28,7 +28,34 @@ const LandingMainTextContainer = styled.div`
 `;
 
 const LandingImage = styled.img`
+`
 
+const AboutContainer = styled.div`
+margin-top: 6rem;
+display: flex;
+flex-grow: 2;
+justify-content: space-between;
+`
+
+const AboutText = styled.p`
+font-weight: 400;
+line-height: 2.5rem;
+font-size: 1.1rem;
+`
+
+const Heading = styled.h3`
+font-weight: 600;
+font-size: 2rem;
+margin-bottom: 1rem;
+`
+
+const AboutImage = styled.img`
+width: 300px;
+height: auto;
+`
+
+const TextContainer = styled.div`
+width: 50%;
 `
 
 export {
@@ -36,5 +63,10 @@ export {
   LandingHeading,
   LandingMainTextContainer,
   LandingText,
-  LandingImage
+  LandingImage,
+  AboutContainer, 
+  AboutText,
+  Heading,
+  TextContainer,
+  AboutImage
 };
