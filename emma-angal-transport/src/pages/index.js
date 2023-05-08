@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Nav from '@/components/nav/Nav'
 import Landing from '@/components/Landing/Landing'
+import Services from '@/components/Services/Services'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       </Head>
       <Nav/>
       <Landing />
+      <Services/>
     </>
   )
 }
