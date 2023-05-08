@@ -4,6 +4,7 @@ const LandingContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
+  padding-bottom: 6rem;
 `;
 
 const LandingHeading = styled.h1`

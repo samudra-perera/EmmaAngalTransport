@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Nav from '@/components/nav/Nav'
 import Landing from '@/components/Landing/Landing'
 import Services from '@/components/Services/Services'
+import Testimonials from '@/components/Testimonials/Testimonials'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Nav/>
       <Landing />
       <Services/>
+      <Testimonials />
     </>
   )
 }
