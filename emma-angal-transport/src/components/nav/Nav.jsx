@@ -16,8 +16,8 @@ const Nav = () => {
     <Container bgColour={"#F3F6FE"}>
       <NavContainer>
         <LogoContainer>
-          <NavLinks href="/">
-            <Logo src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png" />
+          <NavLinks>
+            <Logo src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png" alt="EATransport Logo"/>
             <LogoText>EATransport</LogoText>
           </NavLinks>
         </LogoContainer>
