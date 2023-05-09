@@ -3,6 +3,7 @@ import Nav from '@/components/nav/Nav'
 import Landing from '@/components/Landing/Landing'
 import Services from '@/components/Services/Services'
 import Testimonials from '@/components/Testimonials/Testimonials'
+import FAQ from '@/components/FAQ/FAQ'
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Landing />
       <Services/>
       <Testimonials />
+      <FAQ/>
     </>
   )
 }
