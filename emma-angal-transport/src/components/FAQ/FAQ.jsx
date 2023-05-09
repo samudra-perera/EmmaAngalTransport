@@ -3,6 +3,7 @@ import { Container } from "../SharedComponents/SharedComponents.style";
 import { FAQContainer } from "./style/FAQ.style";
 import { QnA } from "./QnA";
 import QuestionDropDown from "./QuestionDropDown";
+import MailFormSubscription from "../MailForm/MailFormSubscription";
 
 const FAQ = () => {
   return (
@@ -19,6 +20,7 @@ const FAQ = () => {
           );
         })}
       </FAQContainer>
+      <MailFormSubscription />
     </Container>
   );
 };
