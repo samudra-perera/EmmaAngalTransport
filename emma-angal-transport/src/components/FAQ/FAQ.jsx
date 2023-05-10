@@ -19,8 +19,8 @@ const FAQ = () => {
             />
           );
         })}
+        <MailFormSubscription />
       </FAQContainer>
-      <MailFormSubscription />
     </Container>
   );
 };

@@ -8,6 +8,7 @@ const FAQContainer = styled.div`
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
+  padding-bottom: 8rem;
 `;
 
 const QuestionContainer = styled.div`

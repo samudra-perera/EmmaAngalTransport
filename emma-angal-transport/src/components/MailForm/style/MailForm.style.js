@@ -4,7 +4,7 @@ const MailFormContainer = styled.div`
   max-width: 1400px;
   margin: 0 auto;
   padding: 1rem;
-  margin-top: 6rem;
+  margin-top: 8rem;
   background-color: #ffcb34;
   display: flex;
   align-items: center;
