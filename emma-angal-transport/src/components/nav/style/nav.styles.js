@@ -89,7 +89,7 @@ const ContactUsButton = styled.a`
   }
 
   @media ${media.tablet} {
-    display: none;
+    display: ${props => props.tablet || 'none;'};
   }
 `;
 

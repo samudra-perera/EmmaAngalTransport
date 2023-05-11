@@ -24,7 +24,7 @@ const Services = () => {
                 <CardIcon src={card.iconUrl} />
                 <CardHeading>{card.heading}</CardHeading>
                 {index === 5 ? (
-                  <ContactUsButton>Contact Us</ContactUsButton>
+                  <ContactUsButton tablet={'flex'}>Contact Us</ContactUsButton>
                 ) : (
                   <CardText>{card.explanation}</CardText>
                 )}

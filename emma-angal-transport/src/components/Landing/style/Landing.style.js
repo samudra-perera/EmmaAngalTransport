@@ -11,8 +11,8 @@ const LandingContainer = styled.div`
 
   @media ${media.tablet} {
     margin-top: 2rem;
+    padding-bottom: 3rem;
   }
-
 `;
 
 const LandingHeading = styled.h1`
@@ -30,7 +30,11 @@ const LandingHeading = styled.h1`
     font-size: 4rem;
     line-height: 4.25rem;
   }
-  
+
+  @media ${media.mobile} {
+    font-size: 2.7rem;
+    line-height: 2.95rem;
+  }
 `;
 
 const LandingText = styled.p`
@@ -39,7 +43,7 @@ const LandingText = styled.p`
   text-align: right;
 
   @media ${media.laptop} {
-    font-size: .9rem;
+    font-size: 0.9rem;
   }
 
   @media ${media.tablet} {
@@ -47,6 +51,10 @@ const LandingText = styled.p`
     width: 70%;
   }
 
+  @media ${media.mobile} {
+    font-size: 0.7rem;
+    width: 90%;
+  }
 `;
 
 const LandingMainTextContainer = styled.div`
@@ -63,6 +71,9 @@ const LandingMainTextContainer = styled.div`
     align-items: start;
   }
 
+  @media ${media.mobile} {
+    margin-bottom: 1rem;
+  }
 `;
 
 const LandingImage = styled.img`
@@ -79,6 +90,11 @@ const AboutContainer = styled.div`
   @media ${media.tablet} {
     flex-direction: column;
     align-items: center;
+    margin-top: 2rem;
+  }
+
+  @media ${media.mobile} {
+    margin-top: 1rem;
   }
 
 `;
@@ -87,22 +103,50 @@ const AboutText = styled.p`
   font-weight: 400;
   line-height: 2.5rem;
   font-size: 1.1rem;
+
+  @media ${media.laptop} {
+    font-size: 1rem;
+    line-height: 2.25rem;
+  }
+
+  @media ${media.tablet} {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
+
+  @media ${media.mobile} {
+    font-size: 0.7rem;
+    line-height: 1.05rem;
+  }
 `;
 
 const Heading = styled.h3`
   font-weight: 600;
   font-size: 2rem;
   margin-bottom: 1rem;
+
+  @media ${media.tablet} {
+    font-size: 1.5rem;
+  }
+
+  @media ${media.mobile} {
+    font-size: 1.3rem;
+  }
 `;
 
 const AboutImage = styled.img`
   width: 300px;
   height: auto;
+
+  @media ${media.mobile} {
+    width: 250px;
+    margin-top: 1rem;
+  }
+
 `;
 
 const TextContainer = styled.div`
   width: 50%;
-
 
   @media ${media.tablet} {
     width: 100%;
@@ -112,7 +156,7 @@ const TextContainer = styled.div`
 const ColouredBox = styled.div`
   position: absolute;
   z-index: -10;
-  background-color: ${props => props.colour || 'red'};
+  background-color: ${(props) => props.colour || "red"};
   width: 1000px;
   height: 500px;
   left: -200px;

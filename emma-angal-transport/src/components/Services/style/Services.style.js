@@ -15,9 +15,10 @@ justify-content: space-between;
 
 const Card = styled.div`
 width: 30%;
+min-width: 300px;
 background-color: #F3F6FE;
 padding: 1rem;
-margin: 1rem 0 2rem 0;
+margin: 1rem auto 2rem auto;
 display: flex;
 flex-direction: column;
 align-items: center;
