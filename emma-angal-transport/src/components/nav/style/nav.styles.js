@@ -7,8 +7,7 @@ const NavHeading = styled.h3`
 `;
 
 const Container = styled.div`
-
-`
+`;
 
 const NavContainer = styled.div`
   background-color: #f3f6fe;
@@ -24,6 +23,10 @@ const NavContainer = styled.div`
 const LogoContainer = styled.div`
   display: flex;
   flex-grow: 2;
+
+  @media ${media.tablet} {
+    margin-left: 1rem;
+  }
 `;
 
 const Logo = styled.img`
@@ -37,9 +40,24 @@ const LogoText = styled.h6`
 `;
 
 const LinksContainer = styled.div`
-display: flex;
-justify-content: space-around;
-flex-grow: 3;
+  display: flex;
+  justify-content: space-around;
+  flex-grow: 3;
+
+  @media ${media.tablet} {
+    display: none;
+  }
+`;
+
+const HamburgerContainer = styled.div`
+  display: none;
+
+  @media ${media.tablet} {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    margin-right: 1rem;
+  }
 `;
 
 const NavLinks = styled.a`
@@ -53,24 +71,51 @@ const NavLinks = styled.a`
 `;
 
 const ButtonContainer = styled.div`
-flex-grow: 2;
-display: flex;
-justify-content: flex-end;
-`
+  flex-grow: 2;
+  display: flex;
+  justify-content: flex-end;
+`;
 
 const ContactUsButton = styled.a`
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
   border: 2px solid black;
-  padding: .5rem .75rem;
+  padding: 0.5rem 0.75rem;
 
   &:hover {
     background-color: black;
-    color: #F3F6FE;
+    color: #f3f6fe;
   }
 
+  @media ${media.tablet} {
+    display: none;
+  }
 `;
+
+const MobileNavLinks = styled.div`
+display: none;
+@media ${media.tablet} {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 62px;
+  width: 100%;
+  left: 0;
+  background-color: #f3f6fe;
+}
+`
+
+const MobileLinks = styled.a`
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: #000;
+  padding: 1rem 0;
+`
 
 export {
   NavHeading,
@@ -82,5 +127,8 @@ export {
   LogoText,
   NavLinks,
   Container,
-  ButtonContainer
+  ButtonContainer,
+  HamburgerContainer,
+  MobileNavLinks,
+  MobileLinks
 };

@@ -17,6 +17,13 @@ import { useState } from "react";
 
 const Testimonials = () => {
   const [tab, setTab] = useState(0);
+  const clickHandler = () => {
+    if (tab === client.length - 1) {
+      setTab(0);
+    } else {
+      setTab((tab) => tab + 1);
+    }
+  };
 
   return (
     <Container>
@@ -24,7 +31,9 @@ const Testimonials = () => {
         <Heading>What Our Clients Say About Us</Heading>
         <TestimonialCardContainer>
           <QuoteImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683583710/EmmaAngal/quotes_atvusm.png" />
-          <TestimonialText>{client[tab].testimonial}</TestimonialText>
+          <TestimonialText onClick={clickHandler}>
+            {client[tab].testimonial}
+          </TestimonialText>
           <AvatarContainer>
             <AvatarContentContainer>
               <Avatar src={client[tab].avatarURL} />

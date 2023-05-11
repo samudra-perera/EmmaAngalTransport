@@ -10,6 +10,7 @@ import {
   AboutText,
   TextContainer,
   AboutImage,
+  ColouredBox,
 } from "./style/Landing.style";
 
 const Landing = () => {
@@ -17,6 +18,7 @@ const Landing = () => {
     <Container>
       <LandingContainer>
         <LandingMainTextContainer>
+          {/* <ColouredBox width={'1000px'} height={'500px'} left={'-100px'} top={'100px'} colour={'#FFCB34'}/> */}
           <LandingHeading>
             Logistics <br /> Solutions
           </LandingHeading>
@@ -38,7 +40,7 @@ const Landing = () => {
               complex supply chains.
             </AboutText>
           </TextContainer>
-          <AboutImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683569578/EmmaAngal/clipart1357525_suwzxp.png"/>
+          <AboutImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683569578/EmmaAngal/clipart1357525_suwzxp.png" />
         </AboutContainer>
       </LandingContainer>
     </Container>
