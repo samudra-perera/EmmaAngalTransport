@@ -34,7 +34,7 @@ const Logo = styled.img`
   width: 45px;
 `;
 
-const LogoText = styled.p`
+const LogoText = styled.span`
   font-weight: 700;
   font-size: 1.1rem;
 `;

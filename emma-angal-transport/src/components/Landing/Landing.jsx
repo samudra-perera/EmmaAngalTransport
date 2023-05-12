@@ -34,7 +34,7 @@ const Landing = () => {
               and sustainability. We strive to set ourselves apart from the
               competition by living these values every day. Our commitment to
               delivering the best possible outcomes for our clients is
-              unwavering, whether we&#39re handling a single package or managing
+              unwavering, whether we&#39;re handling a single package or managing
               complex supply chains.
             </AboutText>
           </TextContainer>

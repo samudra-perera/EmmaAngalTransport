@@ -57,8 +57,8 @@ const MailForm = ({ status, message, onValidated }) => {
       <TextContainer>
         <FormHeading>Lets Connect!</FormHeading>
         <FormText>
-          Whether you&#39re interested in our services, have a question, or just
-          want to say hello, we&#39re here to listen. Use this form to start the
+          Whether you&#39;re interested in our services, have a question, or just
+          want to say hello, we&#39;re here to listen. Use this form to start the
           conversation.
         </FormText>
       </TextContainer>
