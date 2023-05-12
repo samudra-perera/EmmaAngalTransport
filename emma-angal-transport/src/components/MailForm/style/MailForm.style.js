@@ -1,3 +1,4 @@
+import { media } from "@/styles/media";
 import styled from "styled-components";
 
 const MailFormContainer = styled.div`
@@ -9,6 +10,17 @@ const MailFormContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  @media ${media.tablet} {
+    margin-top: 5rem;
+    flex-direction: column;
+    padding-bottom: 2rem;
+  }
+
+  @media ${media.mobile} {
+    margin-top: 3rem;
+  }
+
 `;
 
 const TextContainer = styled.div`
@@ -16,16 +28,33 @@ const TextContainer = styled.div`
   flex-direction: column;
   width: 50%;
   padding: 3rem 2rem;
+
+  @media ${media.tablet} {
+    padding: 1rem;
+    width: 100%;
+  }
+
 `;
 
 const FormHeading = styled.h4`
   font-weight: 700;
   font-size: 2.2rem;
   margin-bottom: 1rem;
+
+  @media ${media.tablet} {
+    font-size: 1.5rem;
+  }
+
 `;
 
 const FormText = styled.p`
     width: 90%;
+
+    @media ${media.tablet} {
+        width: 100%;
+        font-size: .9rem;
+    }
+
 `;
 
 const InputContainer = styled.div`
@@ -39,6 +68,11 @@ const FormContainer = styled.div`
     background-color: white;
     padding: 1rem 1.5rem;
     display: flex;
+
+    @media ${media.tablet} {
+        padding: .5rem 1rem;
+    }
+
 `
 
 const EmailInput = styled.input`
@@ -47,7 +81,7 @@ const EmailInput = styled.input`
     border: none;
     :focus {
         outline: none;
-    }
+    }    
 `
 
 const SubmitButton = styled.button`
@@ -60,6 +94,12 @@ const SubmitButton = styled.button`
     &:hover {
         background-color: #2D2D2D;
     }
+
+    @media ${media.tablet} {
+        padding: .5rem .75rem;
+        font-size: .9rem;
+    }
+
 `
 
 export {

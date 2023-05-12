@@ -13,6 +13,12 @@ gap: 1.25rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
+
+@media ${media.mobile} {
+  gap: 0;
+  margin-top: 0;
+}
+
 `;
 
 const Card = styled.div`

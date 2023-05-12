@@ -1,3 +1,4 @@
+import { media } from "@/styles/media";
 import styled from "styled-components";
 
 const FAQContainer = styled.div`
@@ -18,12 +19,24 @@ const QuestionContainer = styled.div`
   padding: 2rem;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin-bottom: 0;
+
+  @media ${media.tablet} {
+    padding: 1.25rem;
+    margin: .75rem;
+    margin-bottom: 0;
+  }
+
 `;
 
 const QuestionText = styled.h6`
   font-weight: 700;
   font-size: 1.3rem;
   color: ${props => props.colour || 'black'};
+
+  @media ${media.tablet} {
+    font-size: 1rem;
+  }
+
 `;
 
 const QuestionHeadingContainer = styled.div`
@@ -36,6 +49,11 @@ const AnswerText = styled.p`
   font-size: 1.1rem;
   padding-top: .5rem;
   color: white;
+
+  @media ${media.tablet} {
+    font-size: .9rem;
+  }
+
 `;
 
 const AnswerContainer = styled.div``;
