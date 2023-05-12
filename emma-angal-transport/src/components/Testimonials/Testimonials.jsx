@@ -30,13 +30,13 @@ const Testimonials = () => {
       <TestimonialContainer>
         <Heading>What Our Clients Say About Us</Heading>
         <TestimonialCardContainer>
-          <QuoteImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683583710/EmmaAngal/quotes_atvusm.png" />
+          <QuoteImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683583710/EmmaAngal/quotes_atvusm.png" alt="Quotes"/>
           <TestimonialText onClick={clickHandler}>
             {client[tab].testimonial}
           </TestimonialText>
           <AvatarContainer>
             <AvatarContentContainer>
-              <Avatar src={client[tab].avatarURL} />
+              <Avatar src={client[tab].avatarURL} alt="Avatar"/>
               <AvatarName>{client[tab].name}</AvatarName>
             </AvatarContentContainer>
             <ButtonContainer>

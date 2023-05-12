@@ -21,7 +21,7 @@ const Services = () => {
           {CardInfo.map((card, index) => {
             return (
               <Card key={index}>
-                <CardIcon src={card.iconUrl} />
+                <CardIcon src={card.iconUrl} alt={card.heading}/>
                 <CardHeading>{card.heading}</CardHeading>
                 {index === 5 ? (
                   <ContactUsButton tablet={'flex'} href="mailto:emmaangaltransportservice@gmail.com">Contact Us</ContactUsButton>

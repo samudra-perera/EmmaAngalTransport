@@ -25,7 +25,7 @@ const Landing = () => {
             Solutions You Can Count On
           </LandingText>
         </LandingMainTextContainer>
-        <LandingImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683532492/EmmaAngal/containers_km4jyt.png" />
+        <LandingImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683532492/EmmaAngal/containers_km4jyt.png" alt="Logo"/>
         <AboutContainer>
           <TextContainer>
             <Heading>From Point A to Point B</Heading>
@@ -38,7 +38,7 @@ const Landing = () => {
               complex supply chains.
             </AboutText>
           </TextContainer>
-          <AboutImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683569578/EmmaAngal/clipart1357525_suwzxp.png" />
+          <AboutImage src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683569578/EmmaAngal/clipart1357525_suwzxp.png" alt="Shipping Containers"/>
         </AboutContainer>
       </LandingContainer>
     </Container>
