@@ -10,7 +10,6 @@ import {
   AboutText,
   TextContainer,
   AboutImage,
-  ColouredBox,
 } from "./style/Landing.style";
 
 const Landing = () => {
@@ -18,7 +17,6 @@ const Landing = () => {
     <Container id="Home">
       <LandingContainer>
         <LandingMainTextContainer>
-          {/* <ColouredBox width={'1000px'} height={'500px'} left={'-100px'} top={'100px'} colour={'#FFCB34'}/> */}
           <LandingHeading>
             Logistics <br /> Solutions
           </LandingHeading>
@@ -36,7 +34,7 @@ const Landing = () => {
               and sustainability. We strive to set ourselves apart from the
               competition by living these values every day. Our commitment to
               delivering the best possible outcomes for our clients is
-              unwavering, whether we're handling a single package or managing
+              unwavering, whether we&#39re handling a single package or managing
               complex supply chains.
             </AboutText>
           </TextContainer>
