@@ -1,3 +1,4 @@
+import { media } from "@/styles/media";
 import styled from "styled-components";
 
 const ServicesContainer = styled.div`
@@ -8,6 +9,7 @@ const ServicesContainer = styled.div`
 `;
 const CardContainer = styled.div`
 margin-top: 2rem;
+gap: 1.25rem;
 display: flex;
 flex-wrap: wrap;
 justify-content: space-between;
@@ -22,23 +24,53 @@ margin: 1rem auto 2rem auto;
 display: flex;
 flex-direction: column;
 align-items: center;
+min-height: 300px;
+
+@media ${media.laptop} {
+  width: 40%;
+  padding: .5rem;
+}
+
+@media ${media.tablet} {
+  padding: 0.25rem;
+}
 `;
 
 const CardIcon = styled.img`
 height: 60px;
 width: 60px;
 margin: 2rem 0;
+
+@media ${media.tablet} {
+  height: 45px;
+  width: 45px;
+}
+
 `;
 
 const CardHeading = styled.h6`
 font-weight: 700;
 font-size: 1.3rem;
 margin-bottom: 2rem;
+
+@media ${media.laptop} {
+  font-size: 1.2rem;
+}
+
+@media ${media.tablet} {
+  font-size: 1.1rem;
+   margin-bottom: 1.2rem;
+}
+
 `;
 
 const CardText = styled.p`
 font-size: .9rem;
 padding: 0 2rem 2rem 2rem;
+
+@media ${media.laptop} {
+  font-size: .8rem;
+}
 `;
 
 
