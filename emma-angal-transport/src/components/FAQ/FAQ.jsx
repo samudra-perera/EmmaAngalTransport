@@ -7,7 +7,7 @@ import MailFormSubscription from "../MailForm/MailFormSubscription";
 
 const FAQ = () => {
   return (
-    <Container bgColour={"#F3F6FE"}>
+    <Container bgColour={"#F3F6FE"} id="FAQ">
       <FAQContainer>
         <Heading>Frequently Asked Questions</Heading>
         {QnA.map((question, index) => {

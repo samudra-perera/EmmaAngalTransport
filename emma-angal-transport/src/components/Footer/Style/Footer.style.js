@@ -1,3 +1,5 @@
+import { LogoContainer } from "@/components/nav/style/nav.styles";
+import { media } from "@/styles/media";
 import styled from "styled-components";
 
 const FooterContainer = styled.div`
@@ -7,6 +9,12 @@ const FooterContainer = styled.div`
   border-top: 1px solid grey;
   display: flex;
   justify-content: space-evenly;
+
+  @media ${media.mobile} {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
 `;
 
 const ContactContainer = styled.div`
@@ -30,6 +38,11 @@ const FooterLinksContainer = styled.div`
     flex-grow: 2;
     gap: 5rem;
 
+    @media ${media.tablet} {   
+        display: none;
+    }
+
+
 `
 
 const CCText = styled.p`
@@ -38,4 +51,11 @@ const CCText = styled.p`
     padding-bottom: 1rem;
 `
 
-export { FooterContainer, ContactContainer, ContactHeader, ContactText, FooterLinksContainer, CCText };
+const FooterLogo = styled(LogoContainer)`
+    @media ${media.mobile} {
+        margin: 0;
+    }
+`
+
+
+export { FooterContainer, ContactContainer, ContactHeader, ContactText, FooterLinksContainer, CCText, FooterLogo };

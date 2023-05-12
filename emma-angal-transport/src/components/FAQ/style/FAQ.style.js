@@ -10,6 +10,15 @@ const FAQContainer = styled.div`
   align-items: center;
   padding-top: 3rem;
   padding-bottom: 8rem;
+
+  @media ${media.tablet} {
+    padding-bottom: 5rem;
+  }
+
+  @media ${media.mobile} {
+    padding-bottom: 3rem;
+  }
+
 `;
 
 const QuestionContainer = styled.div`

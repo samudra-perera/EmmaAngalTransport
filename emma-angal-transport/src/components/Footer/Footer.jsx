@@ -6,6 +6,7 @@ import {
   ContactText,
   FooterContainer,
   FooterLinksContainer,
+  FooterLogo,
 } from "./Style/Footer.style";
 import {
   LogoContainer,
@@ -13,24 +14,45 @@ import {
   Logo,
   LogoText,
 } from "../nav/style/nav.styles";
+import { Link } from "react-scroll";
 
 const Footer = () => {
   return (
     <Container bgColour={"#F3F6FE"}>
       <FooterContainer>
-        <LogoContainer>
-          <NavLinks>
-            <Logo
-              src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png"
-              alt="EATransport Logo"
-            />
-            <LogoText>EATransport</LogoText>
-          </NavLinks>
-        </LogoContainer>
+        <FooterLogo>
+          <Link to="Home" spy={true} smooth={true} offset={-25} duration={500}>
+            <NavLinks>
+              <Logo
+                src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png"
+                alt="EATransport Logo"
+              />
+              <LogoText>EATransport</LogoText>
+            </NavLinks>
+          </Link>
+        </FooterLogo>
         <FooterLinksContainer>
-          <NavLinks>Home</NavLinks>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Service</NavLinks>
+          {/* <Link
+            to="Service"
+            spy={true}
+            smooth={true}
+            offset={-25}
+            duration={500}
+          >
+            <NavLinks>Service</NavLinks>
+          </Link>
+          <Link
+            to="Testimonials"
+            spy={true}
+            smooth={true}
+            offset={-55}
+            duration={500}
+          >
+            <NavLinks>Testimonials</NavLinks>
+          </Link>
+          <Link to={"FAQ"} spy={true} smooth={true} offset={-25} duration={500}>
+            <NavLinks>FAQ</NavLinks>
+          </Link> */}
         </FooterLinksContainer>
         <ContactContainer>
           <ContactHeader>Contact</ContactHeader>

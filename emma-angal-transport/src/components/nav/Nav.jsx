@@ -12,6 +12,7 @@ import {
   MobileNavLinks,
   MobileLinks,
 } from "./style/nav.styles";
+import { Link } from "react-scroll";
 import { Container } from "../SharedComponents/SharedComponents.style";
 import { RxHamburgerMenu, RxCross2 } from "react-icons/rx";
 import { useState } from "react";
@@ -22,17 +23,25 @@ const Nav = () => {
   return (
     <Container
       bgColour={"#F3F6FE"}
-      style={{ position: "fixed", top: "0", width: "100%", zIndex: '100'}}
+      style={{ position: "fixed", top: "0", width: "100%", zIndex: "100" }}
     >
       <NavContainer>
         <LogoContainer>
-          <NavLinks>
-            <Logo
-              src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png"
-              alt="EATransport Logo"
-            />
-            <LogoText>EATransport</LogoText>
-          </NavLinks>
+          <Link
+            to="Home"
+            spy={true}
+            smooth={true}
+            offset={-25}
+            duration={500}
+          >
+            <NavLinks>
+              <Logo
+                src="https://res.cloudinary.com/dkrjwbr8w/image/upload/v1683518437/EmmaAngal/LogoEAT_wrrgin.png"
+                alt="EATransport Logo"
+              />
+              <LogoText>EATransport</LogoText>
+            </NavLinks>
+          </Link>
         </LogoContainer>
         <HamburgerContainer>
           {open ? (
@@ -43,10 +52,33 @@ const Nav = () => {
         </HamburgerContainer>
         {open ? (
           <MobileNavLinks>
-            {" "}
-            <MobileLinks>Home</MobileLinks>
-            <MobileLinks>About</MobileLinks>
-            <MobileLinks>Service</MobileLinks>
+            <Link
+              to="Service"
+              spy={true}
+              smooth={true}
+              offset={-25}
+              duration={500}
+            >
+              <MobileLinks>Service</MobileLinks>
+            </Link>
+            <Link
+              to="Testimonials"
+              spy={true}
+              smooth={true}
+              offset={-55}
+              duration={500}
+            >
+              <MobileLinks>Testimonials</MobileLinks>
+            </Link>
+            <Link
+              to={"FAQ"}
+              spy={true}
+              smooth={true}
+              offset={-25}
+              duration={500}
+            >
+              <MobileLinks>FAQ</MobileLinks>
+            </Link>
             <MobileLinks>Contact Us</MobileLinks>
           </MobileNavLinks>
         ) : (
@@ -54,12 +86,32 @@ const Nav = () => {
         )}
 
         <LinksContainer>
-          <NavLinks>Home</NavLinks>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Service</NavLinks>
+          <Link
+            to="Service"
+            spy={true}
+            smooth={true}
+            offset={-25}
+            duration={500}
+          >
+            <NavLinks>Service</NavLinks>
+          </Link>
+          <Link
+            to="Testimonials"
+            spy={true}
+            smooth={true}
+            offset={-55}
+            duration={500}
+          >
+            <NavLinks>Testimonials</NavLinks>
+          </Link>
+          <Link to={"FAQ"} spy={true} smooth={true} offset={-25} duration={500}>
+            <NavLinks>FAQ</NavLinks>
+          </Link>
         </LinksContainer>
         <ButtonContainer>
-          <ContactUsButton>Contact Us</ContactUsButton>
+          <ContactUsButton href="mailto:emmaangaltransportservice@gmail.com">
+            Contact Us
+          </ContactUsButton>
         </ButtonContainer>
       </NavContainer>
     </Container>

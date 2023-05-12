@@ -14,7 +14,7 @@ import { CardInfo } from "./ServicesData";
 
 const Services = () => {
   return (
-    <Container bgColour={"#7EB4FB"}>
+    <Container bgColour={"#7EB4FB"} id="Service">
       <ServicesContainer>
         <Heading>We Have Everything You Need</Heading>
         <CardContainer>
@@ -24,7 +24,7 @@ const Services = () => {
                 <CardIcon src={card.iconUrl} />
                 <CardHeading>{card.heading}</CardHeading>
                 {index === 5 ? (
-                  <ContactUsButton tablet={'flex'}>Contact Us</ContactUsButton>
+                  <ContactUsButton tablet={'flex'} href="mailto:emmaangaltransportservice@gmail.com">Contact Us</ContactUsButton>
                 ) : (
                   <CardText>{card.explanation}</CardText>
                 )}

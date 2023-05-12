@@ -34,7 +34,7 @@ const Logo = styled.img`
   width: 45px;
 `;
 
-const LogoText = styled.h6`
+const LogoText = styled.p`
   font-weight: 700;
   font-size: 1.1rem;
 `;
@@ -60,7 +60,7 @@ const HamburgerContainer = styled.div`
   }
 `;
 
-const NavLinks = styled.a`
+const NavLinks = styled.p`
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
@@ -82,6 +82,8 @@ const ContactUsButton = styled.a`
   font-size: 0.9rem;
   border: 2px solid black;
   padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: black;
 
   &:hover {
     background-color: black;
@@ -106,7 +108,7 @@ display: none;
 }
 `
 
-const MobileLinks = styled.a`
+const MobileLinks = styled.p`
   cursor: pointer;
   font-weight: 600;
   font-size: 0.9rem;
