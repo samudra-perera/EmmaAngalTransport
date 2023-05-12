@@ -57,7 +57,7 @@ const Footer = () => {
         <ContactContainer>
           <ContactHeader>Contact</ContactHeader>
           <ContactText>emmaangaltransportservice@gmail.com</ContactText>
-          <ContactText>416-990-0033</ContactText>
+          <ContactText>905-843-9749</ContactText>
         </ContactContainer>
       </FooterContainer>
       <CCText>Copyright © 2023 EmmaAngal | All rights reserved.</CCText>
