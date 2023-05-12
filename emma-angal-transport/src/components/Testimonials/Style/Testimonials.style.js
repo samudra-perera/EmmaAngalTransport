@@ -41,6 +41,8 @@ const TestimonialText = styled.p`
   @media ${media.mobile} {
     font-size: .8rem;
     width: 100%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
   }
 
 `;

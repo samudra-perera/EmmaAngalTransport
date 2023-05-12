@@ -55,6 +55,10 @@ const FormText = styled.p`
         font-size: .9rem;
     }
 
+    @media ${media.mobile} {
+        font-size: .8rem;
+    }
+
 `;
 
 const InputContainer = styled.div`
@@ -82,6 +86,11 @@ const EmailInput = styled.input`
     :focus {
         outline: none;
     }    
+
+    @media ${media.mobile} {
+        width: 170px;
+        font-size: .8rem;
+    }
 `
 
 const SubmitButton = styled.button`
@@ -98,6 +107,11 @@ const SubmitButton = styled.button`
     @media ${media.tablet} {
         padding: .5rem .75rem;
         font-size: .9rem;
+    }
+
+    @media ${media.mobile} {
+        font-size: .8rem;
+        padding: .3rem .6rem;
     }
 
 `
